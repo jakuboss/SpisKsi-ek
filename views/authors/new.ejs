@@ -1,0 +1,9 @@
+<!-- strona do tworzenia nowego autora -->
+<h2 class="page-header">Nowy autor</h2>
+<form action="/authors" method="POST">
+  <%- include('_form_fields') %>
+  <div class="form-row form-row-end btn-row">
+    <a class="btn btn-danger" href="/authors">Anuluj</a>
+    <button class="btn btn-primary" type="submit">Stwórz</button>
+  </div>
+</form>

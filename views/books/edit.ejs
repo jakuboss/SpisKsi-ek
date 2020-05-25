@@ -1,0 +1,10 @@
+<!-- strona do edytowania ksiażki -->
+
+<h2 class="page-header">Edytuj książkę</h2>
+<form action="/books/<%= book.id %>?_method=PUT" method="POST">
+  <%- include('_form_fields') %>
+  <div class="form-row form-row-end btn-row">
+    <a class="btn btn-danger" href="/books">Anuluj</a>
+    <button class="btn btn-primary" type="submit">Aktualizuj</button>
+  </div>
+</form>
